@@ -12,6 +12,7 @@ public class MakersTest {
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--remote-debugging-pipe");
+        chromeOptions.addArguments("--disable-dev-shm-usage");
         driver = new ChromeDriver();
     }
 
