@@ -23,7 +23,7 @@ public class MakersTest {
     @Test
     void shouldPrintPageTitle() {
         driver.get("https://makers.tech");
-        Assertions.assertEquals("We Are Makers. Especially Pablo.", driver.getTitle());
+        Assertions.assertEquals("We Are Makers. Building The Future.", driver.getTitle());
     }
 
     @AfterAll
