@@ -11,6 +11,7 @@ public class MakersTest {
     static void launchBrowser() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--remote-debugging-pipe");
         driver = new ChromeDriver(chromeOptions);
     }
 
