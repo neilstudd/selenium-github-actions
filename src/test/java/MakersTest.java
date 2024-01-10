@@ -15,7 +15,8 @@ public class MakersTest {
         chromeOptions.addArguments("--disable-dev-shm-usage");
         chromeOptions.addArguments("--disable-gpu");
         chromeOptions.addArguments("--no-sandbox");
-        driver = new ChromeDriver();
+        chromeOptions.addArguments("--headless");
+        driver = new ChromeDriver(chromeOptions);
     }
 
     // Your tests will go here!
