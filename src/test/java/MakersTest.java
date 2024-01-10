@@ -11,11 +11,6 @@ public class MakersTest {
     static void launchBrowser() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--remote-debugging-pipe");
-        chromeOptions.addArguments("--disable-dev-shm-usage");
-        chromeOptions.addArguments("--disable-gpu");
-        chromeOptions.addArguments("--no-sandbox");
-        chromeOptions.addArguments("--headless");
         driver = new ChromeDriver(chromeOptions);
     }
 
