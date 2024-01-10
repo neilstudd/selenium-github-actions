@@ -13,6 +13,8 @@ public class MakersTest {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--remote-debugging-pipe");
         chromeOptions.addArguments("--disable-dev-shm-usage");
+        chromeOptions.addArguments("--disable-gpu");
+        chromeOptions.addArguments("--no-sandbox");
         driver = new ChromeDriver();
     }
 
