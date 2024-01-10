@@ -1,14 +1,14 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class MakersTest {
-    private static FirefoxDriver driver;
+    private static ChromeDriver driver;
 
     @BeforeAll
     static void launchBrowser() {
         WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
     }
 
     // Your tests will go here!
