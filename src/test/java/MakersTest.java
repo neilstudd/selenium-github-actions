@@ -19,11 +19,10 @@ public class MakersTest {
         driver = new ChromeDriver(chromeOptions);
     }
 
-    // Your tests will go here!
     @Test
     void shouldPrintPageTitle() {
         driver.get("https://makers.tech");
-        Assertions.assertEquals("We Are Makers. Building The Future.", driver.getTitle());
+        Assertions.assertEquals("We Are Makers. Building the future.", driver.getTitle());
     }
 
     @AfterAll
