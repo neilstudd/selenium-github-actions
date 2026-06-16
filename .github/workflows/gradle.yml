@@ -21,7 +21,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-    - name: Build with Gradle
+    - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v4
-      with:
-        arguments: build --info
+    - name: Build with Gradle
+      run: ./gradlew build --info
